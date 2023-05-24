@@ -2,7 +2,7 @@
 ## Sacar de general.R
 
 ## SAMPLES INFO
-TCGA.THCA.GDC_phenotype.tsv.gz <- read.delim("~/Dropbox/Research/-- CODIGOS/GENES journal/TCGA DATA/TCGA-THCA.GDC_phenotype.tsv.gz.tsv")
+TCGA.THCA.GDC_phenotype.tsv.gz <- read.delim("./TCGA data/TCGA-THCA.GDC_phenotype.tsv.gz.tsv")
 # View(TCGA.THCA.GDC_phenotype.tsv.gz)
 
 DF.samples=TCGA.THCA.GDC_phenotype.tsv.gz
