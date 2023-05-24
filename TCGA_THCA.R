@@ -53,7 +53,7 @@ rownames(GENES)=GENES[,1]
 
 ## MATRIZ DE EXPRESION
 
-TCGA.THCA.htseq_counts.tsv.gz <- read.delim("~/Dropbox/Research/-- CODIGOS/GENES journal/TCGA DATA/TCGA-THCA.htseq_counts.tsv.gz.tsv")
+TCGA.THCA.htseq_counts.tsv.gz <- read.delim("./TCGA data/TCGA-THCA.htseq_counts.tsv.gz.tsv")
 # TCGA.THCA.htseq_counts.tsv.gz <- read.delim("~/Library/CloudStorage/Dropbox/Research/CODIGOS/GENES journal/TCGA DATA/TCGA-THCA.htseq_counts.tsv.gz.tsv")
 
 # View(TCGA.THCA.htseq_counts.tsv.gz)
