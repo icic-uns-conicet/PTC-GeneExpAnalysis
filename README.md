@@ -15,4 +15,6 @@ Scripts should be run in the following order:
  
  RFE.R
  
+Also, files in DATABASES folder should be unziped.
+ 
  
