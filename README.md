@@ -15,7 +15,7 @@ Scripts should be run in the following order:
  
  RFE.R
  
-TCGA data is stored in "TCGA data" folder in the repository. You have to download them manually since they are ignored by -gitignore file; given the size of one of the files.
+TCGA data is stored in "TCGA data" folder in the repository. You have to download all the included files manually since they are ignored by -gitignore file; given the size of one of the files.
 You should download manually, and put into a "TCGA data"" folder so they can be accessed from the script. 
 
 R.Version()
