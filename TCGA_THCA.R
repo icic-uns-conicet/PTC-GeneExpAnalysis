@@ -1,5 +1,4 @@
-## bajando a mano los archivos descargados con XENA BROWSER
-## Sacar de general.R
+## TCGA DATA from: XENA BROWSER
 
 ## SAMPLES INFO
 TCGA.THCA.GDC_phenotype.tsv.gz <- read.delim("./TCGA data/TCGA-THCA.GDC_phenotype.tsv.gz.tsv")
