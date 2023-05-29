@@ -1,9 +1,10 @@
+DIR = "./"
 
-DE.TCGA <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/DE TCGA.csv")
+DE.TCGA <- read.csv("./DE TCGA.csv")
 View(DE.TCGA)
-GEO1b <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/GEO1b.csv")
+GEO1b <- read.csv("./GEO1b.csv")
 # View(GEO1b)
-GEO2b <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/GEO2b.csv")
+GEO2b <- read.csv("./GEO2b.csv")
 # View(GEO2b)
 
 ## OJO: Hay probes q generaron filas con igual GENSYMBOL o ENSID

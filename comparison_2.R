@@ -1,10 +1,12 @@
-.DE.TCGA.clean <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/ DE TCGA clean.csv")
+DIR = "./"
+
+.DE.TCGA.clean <- read.csv("./DE TCGA clean.csv")
 View(.DE.TCGA.clean)
 
-.GEO1b.clean <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/ GEO1b clean.csv")
+.GEO1b.clean <- read.csv("./GEO1b clean.csv")
 View(.GEO1b.clean)
 
-.GEO2b.clean <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/ GEO2b clean.csv")
+.GEO2b.clean <- read.csv("./GEO2b clean.csv")
 View(.GEO2b.clean)
 
 A = .DE.TCGA.clean$X # 7941

@@ -16,7 +16,7 @@ library(randomForest)
 library(org.Hs.eg.db)
 library(STRINGdb)
 
-insDIR = "~/Dropbox/Research/-- CODIGOS/GENES journal/"
+insDIR = "./"
 setwd(insDIR)
 # 
 # If you want to load such an .Rdata file into your environment, 
