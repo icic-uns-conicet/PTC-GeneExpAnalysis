@@ -1,8 +1,3 @@
-# 
-# .ComunesSub <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/ ComunesSub.csv")
-# View(.ComunesSub)
-# .ComunesSobre <- read.csv("~/Dropbox/Research/-- CODIGOS/GENES journal/ ComunesSobre.csv")
-# View(.ComunesSobre)
 
 ### Logistic Regression and Classification ----
 # BiocManager::install("ggpubr")
@@ -52,7 +47,7 @@ Preds2 = select(org.Hs.eg.db, keys=Preds$GENSYMBOL, columns=colS, keytype="SYMBO
 
 Preds[1,]$ENSID %in% ComunesSobre # F
 Preds[2,]$ENSID %in% ComunesSobre # T
-Preds[3,]$ENSID %in% ComunesSobre # F RAROOOOOOOOOOOO
+Preds[3,]$ENSID %in% ComunesSobre # F 
 Preds[4,]$ENSID %in% ComunesSobre # F
 
 boxplot(CONTEOS[Preds[1,]$ENSID,]~FC, main=Preds[1,]$GENSYMBOL, ylab="Gene Expression", xlab = "Control (0) vs. PTC (1)", col = c("green", "red"))
@@ -70,17 +65,6 @@ string_db = STRINGdb$new(version="11.5", species=9606, score_threshold = 200)# ,
 stIDS = string_db$mp(Preds$GENSYMBOL)
 string_db$plot_network(stIDS)
 tabla = string_db$get_enrichment(stIDS)
-
-# chisq.test(sub1hmoxDF.t$`HIGH/LOW`, sub1hmoxDF.t$patTUMOR)
-# # ---- Comparación expresion VS CLINICAL STAGE
-# hmoxDF.t$FclSTAGE = factor(hmoxDF.t$FclSTAGE)
-# kruskal.test(hmoxDF.t$expresion, hmoxDF.t$FclSTAGE)
-# # pval: 0.43
-# # No hay diferencia significativa entre las medias de los grupos
-# boxplot(hmoxDF.t$expresion ~ factor(hmoxDF.t$FclSTAGE))
-
-
-
 
 listaRFE=predictors(results)
 for (i in 1:10)
@@ -118,8 +102,6 @@ nrow(DF.GO) ## Cant de terminos enriquecidos con cutoff 0.05 q se usa para limit
 
 ## espera ENTREZ ID
 kk = enrichKEGG(gene=Preds$GENSYMBOL, pvalueCutoff=0.05)
-
-
 
 # modelo.GLM <- glm(FC ~ ., data = data.frame(t(CONTEOS[1:1000,])), family = binomial(logit), maxit=100)
 # glance(modelo.GLM)
